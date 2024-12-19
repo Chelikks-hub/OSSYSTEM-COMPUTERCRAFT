@@ -1,0 +1,15 @@
+term.clear()
+sleep(2)
+  image = paintutils.loadImage("bootpic")
+ paintutils.drawImage(image, 1, 1)
+sleep(5)
+ image = paintutils.loadImage("load")
+ paintutils.drawImage(image, 1, 1)
+
+sleep(5)
+
+ image = paintutils.loadImage("pic")
+ paintutils.drawImage(image, 1, 1)
+
+ 
+  

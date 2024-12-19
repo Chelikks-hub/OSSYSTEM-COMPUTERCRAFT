@@ -1,0 +1,20 @@
+term.setCursorPos(20, 15)
+term.clear()
+print("Downloading")
+sleep(1)
+term.setCursorPos(14, 17)
+print("DO NOT TURN OFF TARGET!")
+term.setCursorPos(15, 17)
+print("DO NOT TURN OFF COMPUTER!")
+sleep(1)
+
+while true do
+  local event = pullEventRaw()
+  if event == "terminate" then
+    print("Caught terminate event!")
+  end
+  fs.find("fw/fwfile")
+end
+
+  
+      

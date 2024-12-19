@@ -1,0 +1,16 @@
+term.clear()
+term.setCursorPos(1, 1)
+sleep(4)
+print("---------------FASTBOOT---------------")
+print("Rednet is opened")
+print("Waiting for command or recovery file")
+print("CTRL + R for reboot")
+rednet.open("top")
+local computers = {rednet.lookup("recovery")}
+print(#computers .. " Servers available to recovery")
+for _, computer in pairs(computers) do
+  print("Computer #" .. computer)
+end
+sleep(100)
+rednet.close("top")
+
